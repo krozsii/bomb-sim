@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Defuse the bomb</title>
+</head>
+<body>
+    <h1 class="title">Bombing Simulation Game</h1>
+    <div id = "main">
+        <button class="btn" id="egy" onclick = "elso()">1</button>
+        <button class="btn" id="ketto" onclick = "masodik()">2</button>
+        <button class="btn" id="harom" onclick = "harmadik()">3</button>
+        <br>
+        <button class="btn" id="negy" onclick = "negyedik()">4</button>
+        <button class="btn" id="ot" onclick = "otodik()">5</button>
+        <button class="btn" id="hat" onclick = "hatodik()">6</button>
+        <br>
+        <button class="btn" id="het" onclick = "hetedik()">7</button>
+        <button class="btn" id="nyolc" onclick = "nyolcadik()">8</button>
+        <button class="btn" id="kilenc" onclick = "kilencedik()">9</button>
+        <br>
+        <button class="btn-wide" id="nulla" onclick = "nulladik()">0</button>
+        <br>
+        <button class="btn-big" id="submit" onclick = "check()">SUBMIT</button>
+        <button class="btn-big" id="delete" onclick = "torol()">DELETE</button>
+
+        <p id="firstP">Generated code: <span id="generatedNumber"> </span></p>
+        <p id="secondP">Input code: <span id="inputNumber"> </span></p>
+        <p id="thirdP">Explode in: <span id="timer"> </span></p>
+    </div>
+    <footer id = "footer">
+        <span id="author">Krózser Dávid</span>
+    </footer>
+</body>
+
+<style>
+    body
+    {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: darkgrey;
+        font-family: 'Syne Mono', monospace, sans-serif;
+    }
+
+    .title
+    {
+        font-size: 3rem;
+        text-align: center;
+        word-wrap: break-word;
+        transition: 0.3s ease-in-out;
+    }
+
+    .title:hover
+    {
+        color: #008F11
+    }
+
+    #main
+    {
+        position: fixed;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -65%);
+        width: 50%;
+        height: 50%;
+        padding: 50px 100px 100px 100px;
+        text-align: center;
+        background-color: gray;
+        font-size: 1.5rem;
+    }
+
+    .btn
+    {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .btn-big
+    {
+        padding: 5px;
+        margin: 5px 0px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .btn-wide
+    {
+        padding: 10px 65px;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #firstP, #secondP, #thirdP
+    {
+        word-wrap: break-word;
+    }
+
+    #footer
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        background-color: black;
+    }
+
+    #author
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+</style>
+
+</html>
